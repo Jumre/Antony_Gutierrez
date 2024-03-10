@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statistical Analysis App</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Simple Statistic Analysis</h1>
+    <p class="lead">Enter three numbers below to perform statistical analysis:</p>
+    <div id="warning" class="alert alert-warning" style="display: none;"></div>
+    <div class="row mt-4">
+      <div class="col">
+        <input type="text" class="form-control mb-3" id="num1" placeholder="Enter number 1">
+        <input type="text" class="form-control mb-3" id="num2" placeholder="Enter number 2">
+        <input type="text" class="form-control mb-3" id="num3" placeholder="Enter number 3">
+        <button type="button" class="btn btn-primary btn-block" onclick="calculate()">Calculate</button>
+      </div>
+      <div class="col">
+        <div id="results" class="mt-4">
+          <!-- Results will be displayed here -->
+        </div>
+      </div>
+    </div>
+    <div class="mt-5 instructions">
+      <h2>Instructions:</h2>
+      <ol>
+        <li>Enter three numbers in the input fields provided.</li>
+        <li>Click the "Calculate" button to perform statistical analysis.</li>
+        <li>The results will be displayed below the input fields.</li>
+      </ol>
+    </div>
+    <footer class="mt-5 text-muted">
+      <p>Statistical Analysis App © 2024</p>
+    </footer>
+  </div>
+  
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
